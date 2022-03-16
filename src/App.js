@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import './style.css';
 import List from './List';
-import isUppercase from './utils/isUppercase';
+// import isUppercase from './utils/isUppercase';
 import Items from './Items';
 
 export default function App() {
@@ -27,12 +27,12 @@ export default function App() {
           name=""
           onChange={handleOnchange}
           value={inputValue}
-          style={{ color: isUppercase(inputValue) }}
+          // style={{ color: isUppercase(inputValue) }}
         />
         <button onClick={handleSubmit}>Submit</button>
       </form>
       <List list={list} />
-      <Items />
+      {/* <Items /> */}
     </div>
   );
 }
